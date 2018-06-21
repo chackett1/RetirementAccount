@@ -1,4 +1,4 @@
-<!-- Favicon, Optimize imgs/minify, HTML verification -->
+<!-- Favicon, Optimize imgs/minify -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
-        
+
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic'>
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
@@ -14,8 +14,8 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        
-        <title>Retirement Account</title>        
+
+        <title>Retirement Account</title>
     </head>
 
     <body>
@@ -36,10 +36,10 @@
                     <h1>Create a simple plan.<br>Retire a millionair.</h1>
                     <a class="btn btn-ghost js--scroll-to-basics" href="#">Show me more</a>
                     <a class="btn btn-full js--scroll-to-examples" href="#">Prove it</a>
-                </div>  
-            </div>      
+                </div>
+            </div>
         </header>
-        
+
         <section class="section-basics js--section-basics" id="basics">
             <div class="row">
                 <h2>Retirement Account Basics</h2>
@@ -75,11 +75,11 @@
                 </div>
             </div>
         </section>
-        
-        <section class="section-examples js--section-examples" id="examples"> 
+
+        <section class="section-examples js--section-examples" id="examples">
             <div class="row">
                 <h2>Expodential Growth Examples</h2>
-            </div>           
+            </div>
             <div class="row">
                 <div class="col span-1-of-3 box">
                     <h3>Person A</h3>
@@ -104,11 +104,11 @@
                 <canvas id="examplesChart"></canvas>
             </div>
         </section>
-        
-        <section class="section-companyMatch" id="match"> 
+
+        <section class="section-companyMatch" id="match">
             <div class="row">
                 <h2>Company Match Examples</h2>
-            </div>           
+            </div>
             <div class="row">
                 <div class="col span-1-of-2 box">
                     <h3>Person A</h3>
@@ -127,47 +127,47 @@
                 <canvas id="matchChart"></canvas>
             </div>
         </section>
-        
-        <section class="section-createAPlan" id="plan"> 
+
+        <section class="section-createAPlan" id="plan">
             <div class="row">
                 <h2>Create Your Own Plan</h2>
-            </div>           
+            </div>
             <div class="row">
                 <div class="col span-1-of-4">
                     <div class="createPlanInput">
                         <label for="initialDeposit">Initial Deposit</label>
                         <br>
                         <input id="initialDeposit" name="initalDeposit" type="number" value="0">
-                        
+
                         <label for="yearlyDeposits">Yearly Deposits</label>
                         <br>
                         <input id="yearlyDeposits" name="yearlyDeposits" type="number" >
-                        
+
                         <label for="startYear">Start Year</label>
                         <br>
                         <input id="startYear" name="startYear" type="number">
-                        
+
                         <label for="endYear">End Year</label>
                         <br>
                         <input id="endYear" name="endYear" type="number">
-                        
+
                         <button id="planAddData">Add Data</button>
                         <button id="planRemoveDataset">Remove Chart</button>
                     </div>
                 </div>
-                
+
                 <div class="col span-3-of-4 box">
-                    <div id="tryItYourselfDiv"class="row complexChartDiv">
+                    <div id="tryItYourselfDiv" class="row complexChartDiv">
                         <canvas id="tryItYourselfChart"></canvas>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section class="section-createABudget" id="budget"> 
+
+        <section class="section-createABudget" id="budget">
             <div class="row">
                 <h2>Create A Budget</h2>
-            </div>           
+            </div>
             <div class="row">
                 <div class="col span-1-of-4">
                     <div class="create-budget">
@@ -176,11 +176,11 @@
                             <option value="inc" selected="">+</option>
                             <option value="exp">-</option>
                         </select><br>
-                        
+
                         <label for="description">Description</label>
                         <br>
                         <input id="description" name="description" type="text" class="green-focus">
-                        
+
                         <label for="amount">Amount</label>
                         <br>
                         <input id="amount" name="amount" type="number" class="green-focus">
@@ -190,7 +190,7 @@
                         <button id="budgetRemoveAllData" type="submit">Remove All Data</button>
                     </div>
                 </div>
-                
+
                 <div class="col span-1-of-4">
                     <div class="create-budget budget-output">
                         <p class="box-title">Total Budget</p>
@@ -204,21 +204,21 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col span-2-of-4 box">
                     <div class="row complexChartDiv">
-                        <canvas id="budgetChart" height="230px"></canvas>
+                        <canvas id="budgetChart" height="230"></canvas>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <footer>
             <div class="row">
                 <p>Developed by Chris Hackett &copy; 2018</p>
             </div>
         </footer>
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="vendors/js/Chart.min.js"></script>
