@@ -1,0 +1,151 @@
+/* Big tablet */
+@media only screen and (max-width: 1200px) {
+    
+    .header-text-box {
+        right: 2%;
+    }
+
+    .sticky .main-nav li:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Small tablet */
+@media only screen and (max-width: 1023px) {
+    
+    body { 
+        font-size: 18px; 
+    }
+    
+    .header-text-box {
+        width: 40%;
+        margin-top: 10%;
+    }
+    
+    .row {
+        padding: 0 25px;
+    }
+
+    .main-nav {
+        margin-top: 30px;
+    }
+
+    .btn-ghost:link,
+    .btn-ghost:visited {
+        margin-bottom: 10px;
+    }
+
+    .main-nav li {
+        margin-left: 29px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 16px 0;
+        margin: 0 0; 
+    }
+}
+
+/* Big phones */
+@media only screen and (max-width: 767px) {
+
+    body { 
+        font-size: 16px;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+    
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-right: 25px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav { 
+        margin-top: 10px; 
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0; 
+    }
+    
+    .sticky .mobile-nav-icon i {
+        color: #555;
+    }
+    
+    .sticky .mobile-nav-icon {
+        margin-top: 10px;
+    }
+
+    .sticky .main-nav li:last-child {
+        margin-right: 150px;
+    }
+    
+    h1 {
+        font-size: 180%;
+    }
+    
+    .header-text-box {
+        width: 35%;
+        margin-top: 10%;
+    }
+    
+    .createPlanInput {
+        padding: 10px;
+        margin-top: 60px;
+    }
+    
+    .create-budget {
+        padding: 10px;
+    }
+    
+    .btn:link,
+    .btn:visited {
+        padding: 10px 10px;
+    }
+}
+
+/* Small phones */
+@media only screen and (max-width: 525px) {
+    
+    .header-text-box {
+        right: .5%;
+        width: 40%;
+        top: 30%;
+    }
+    
+    .createPlanInput {
+        width: 100%;
+    }    
+    
+    .create-budget {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 454px) {
+   
+    .header-text-box {
+        width: 80%;
+        margin-top: 15%;
+    }
+}

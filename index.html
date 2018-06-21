@@ -1,0 +1,229 @@
+<!-- Favicon, Optimize imgs/minify, HTML verification -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic'>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        
+        <title>Retirement Account</title>        
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#basics">Basics</a></li>
+                    <li><a href="#examples">Examples</a></li>
+                    <li><a href="#match">Company Match</a></li>
+                    <li><a href="#plan">Create a Plan</a></li>
+                    <li><a href="#budget">Create a Budget</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="material-icons">menu</i></a>
+                <a class="mobile-nav-icon js--nav-icon"><i class="material-icons hidden">close</i></a>
+            </nav>
+            <div>
+                <div class="header-text-box">
+                    <h1>Create a simple plan.<br>Retire a millionair.</h1>
+                    <a class="btn btn-ghost js--scroll-to-basics" href="#">Show me more</a>
+                    <a class="btn btn-full js--scroll-to-examples" href="#">Prove it</a>
+                </div>  
+            </div>      
+        </header>
+        
+        <section class="section-basics js--section-basics" id="basics">
+            <div class="row">
+                <h2>Retirement Account Basics</h2>
+            </div>
+            <div class="row js--wayPoint">
+                <div class="col span-1-of-4 box">
+                    <i class="material-icons icon-big">schedule</i>
+                    <h3>Start Early</h3>
+                    <p>
+                        Expodential growth will help you reach your goal. Deposit money early and watch interest take care of the rest.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="material-icons icon-big">event_available</i>
+                    <h3>Make a plan</h3>
+                    <p>
+                        Creating a plan will make your goal obtainable. Keep your plan realistic and manageable. Stick to your plan, and retire with ease.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="material-icons icon-big">sentiment_satisfied_alt</i>
+                    <h3>Relax</h3>
+                    <p>
+                        After your retirement account has enough money, interest will handle the payments for you. At this point you can stop adding money and watch the account grow.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="material-icons icon-big">monetization_on</i>
+                    <h3>Retire a millionair</h3>
+                    <p>
+                        A good goal is to have a million dollars saved when you retire. This balance will cover the basics, as well as some vacations.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-examples js--section-examples" id="examples"> 
+            <div class="row">
+                <h2>Expodential Growth Examples</h2>
+            </div>           
+            <div class="row">
+                <div class="col span-1-of-3 box">
+                    <h3>Person A</h3>
+                    <p>
+                        Starts saving for retirement at the age of 30 and stops at age 65. Deposits $4,000 per year for 35 years. Deposited $140,000 over time and retires with $770,807.
+                    </p>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <h3>Person B</h3>
+                    <p>
+                        Starts saving for retirement at the age of 20 and stops at age 30. Deposits $4,000 per year for 10 years. Deposited $40,000 over time and retires with 1,031,315.
+                    </p>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <h3>Person C</h3>
+                    <p>
+                        Starts saving for retirement at the age of 20 and stops at age 24. Deposits $10,000 per year for 4 years. Deposited $40,000 over time and retires with $1,287,148.
+                    </p>
+                </div>
+            </div>
+            <div class="row basicChartDiv">
+                <canvas id="examplesChart"></canvas>
+            </div>
+        </section>
+        
+        <section class="section-companyMatch" id="match"> 
+            <div class="row">
+                <h2>Company Match Examples</h2>
+            </div>           
+            <div class="row">
+                <div class="col span-1-of-2 box">
+                    <h3>Person A</h3>
+                    <p>
+                        At the age of 25 makes $40,000 per year and at age 65 makes $70,000 per year from a consistent raise every 10 years. Deposits 4% of income plus 4% for the company match from age 25 to 65. Deposited $88,000 over time plus $88,000 from the company match and retires with $1,096,126.
+                    </p>
+                </div>
+                <div class="col span-1-of-2 box">
+                    <h3>Person B</h3>
+                    <p>
+                        Deposits the same as Person A, plus an initial deposit $5,000 at the age of 25. Deposited $93,000 over time and retires with $1,226,791. The $5,000 added at age 25 turned into an extra $130,665 at age 65!
+                    </p>
+                </div>
+            </div>
+            <div class="row basicChartDiv">
+                <canvas id="matchChart"></canvas>
+            </div>
+        </section>
+        
+        <section class="section-createAPlan" id="plan"> 
+            <div class="row">
+                <h2>Create Your Own Plan</h2>
+            </div>           
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="createPlanInput">
+                        <label for="initialDeposit">Initial Deposit</label>
+                        <br>
+                        <input id="initialDeposit" name="initalDeposit" type="number" value="0">
+                        
+                        <label for="yearlyDeposits">Yearly Deposits</label>
+                        <br>
+                        <input id="yearlyDeposits" name="yearlyDeposits" type="number" >
+                        
+                        <label for="startYear">Start Year</label>
+                        <br>
+                        <input id="startYear" name="startYear" type="number">
+                        
+                        <label for="endYear">End Year</label>
+                        <br>
+                        <input id="endYear" name="endYear" type="number">
+                        
+                        <button id="planAddData">Add Data</button>
+                        <button id="planRemoveDataset">Remove Chart</button>
+                    </div>
+                </div>
+                
+                <div class="col span-3-of-4 box">
+                    <div id="tryItYourselfDiv"class="row complexChartDiv">
+                        <canvas id="tryItYourselfChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-createABudget" id="budget"> 
+            <div class="row">
+                <h2>Create A Budget</h2>
+            </div>           
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="create-budget">
+                        <label>Income or Expense</label>
+                        <select id="type" class="green-focus">
+                            <option value="inc" selected="">+</option>
+                            <option value="exp">-</option>
+                        </select><br>
+                        
+                        <label for="description">Description</label>
+                        <br>
+                        <input id="description" name="description" type="text" class="green-focus">
+                        
+                        <label for="amount">Amount</label>
+                        <br>
+                        <input id="amount" name="amount" type="number" class="green-focus">
+
+                        <button id="budgetAddData" type="submit">Add Data</button>
+                        <button id="budgetRemoveData" type="submit">Remove Data</button>
+                        <button id="budgetRemoveAllData" type="submit">Remove All Data</button>
+                    </div>
+                </div>
+                
+                <div class="col span-1-of-4">
+                    <div class="create-budget budget-output">
+                        <p class="box-title">Total Budget</p>
+                        <p class="box-budget">$</p>
+                        <div class="income-list">
+                            <div class="income-total">Total Income $</div>
+                        </div>
+                        <br>
+                        <div class="expense-list">
+                            <div class="expense-total">Total Income $</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col span-2-of-4 box">
+                    <div class="row complexChartDiv">
+                        <canvas id="budgetChart" height="230px"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <p>Developed by Chris Hackett &copy; 2018</p>
+            </div>
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="vendors/js/Chart.min.js"></script>
+        <script src="resources/js/app.js"></script>
+        <script src="resources/js/jquery.js"></script>
+    </body>
+
+</html>

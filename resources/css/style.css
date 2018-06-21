@@ -1,0 +1,373 @@
+/* -------------------------------- */
+/* BASIC SETUP */
+/* -------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* -------------------------------- */
+/* REUSABLE COMPONENTS */
+/* -------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ----- HEADINGS -----*/
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #cc8e35;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* ----- PARAGRAPHS -----*/
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ----- ICONS -----*/
+.icon-big {
+    font-size: 300%;
+    display: block;
+    color: #cc8e35;
+    margin: 10px 0;
+}
+
+/* ----- BUTTONS -----*/
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #cc8e35;
+    border: 1px solid #cc8e35;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #cc8e35;
+    color: #cc8e35;
+    margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #976926;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #976926;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #976926;
+    color: #fff;
+}
+
+button {
+    padding: 2px 5px;
+    margin: 10px 0;
+}
+
+/* ----- INPUT -----*/
+input,
+select {
+    margin-bottom: 10px;
+}
+
+input,
+button {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+select {
+    width: 50px;
+}
+
+/* ----- CHARTS -----*/
+.basicChartDiv {
+    margin-top: 30px;
+    height: 500px;
+}
+.complexChartDiv {
+    height: 500px;
+}
+
+/* -------------------------------- */
+/* HEADER */
+/* -------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/piggybank.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-text-box {
+    float: right;
+    text-align: left;
+    clear: right;
+    padding-right: 5%;
+    margin-top: 15%;
+}
+
+/* ----- Main Nav -----*/
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    margin-right: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link, 
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover, 
+.main-nav li a:active {
+    border-bottom: 2px solid #cc8e35;
+}
+
+.sticky .main-nav li a:link, 
+.sticky .main-nav li a:visited {
+    padding: 8px 0;
+    color: #555;
+}
+
+/* ----- MOBILE NAV -----*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon  i{
+    font-size: 200%;
+    color: #fff;
+    margin-right: 20px;
+}
+
+/* ----- STICKY NAV -----*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 999;
+}
+
+.sticky .main-nav { 
+    margin: 18px; 
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+    margin: 0 10px; 
+}
+
+.sticky .main-nav li:last-child {
+    margin-right: 150px;
+}
+
+/* -------------------------------- */
+/* BASICS */
+/* -------------------------------- */
+
+
+/* -------------------------------- */
+/* EXAMPLES */
+/* -------------------------------- */
+
+.section-examples {
+    background-color: #f4f4f4;
+}
+
+
+/* -------------------------------- */
+/* COMPANY MATCH */
+/* -------------------------------- */
+
+
+/* -------------------------------- */
+/* CREATE A PLAN */
+/* -------------------------------- */
+
+.section-createAPlan {
+    background-color: #f4f4f4;
+}
+
+.createPlanInput {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* -------------------------------- */
+/* CREATE A BUDGET */
+/* -------------------------------- */
+
+.create-budget {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    width: 90%;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.budgetTable {
+    background-color: #f4f4f4;
+}
+
+.section-createABudget {
+    background-color: #fff;
+}
+
+.box-title {    
+    font-size: 120%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.box-budget {    
+    font-size: 120%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.box-budget:after {
+    display: block;
+    height: 2px;
+    background-color: #cc8e35;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.red-focus:focus {
+    border: 2px solid #ff0000 !important;
+}
+
+.green-focus:focus {
+    border: 2px solid #00ff27 !important;
+}
+
+/* -------------------------------- */
+/* FOOTER */
+/* -------------------------------- */
+
+footer {
+    background-color: #222;
+    padding: 15px;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+}
+
+footer p:hover {
+    color: #cc8e35;
+}
+
+/* -------------------------------- */
+/* ANIMATIONS */
+/* -------------------------------- */
+
+.js--wayPoint {
+    opacity: 0;
+}
+
+.js--wayPoint.animated {
+    opacity: 1;
+}
